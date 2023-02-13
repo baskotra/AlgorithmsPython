@@ -18,10 +18,10 @@ def merge(left, right):
             result.append(right[0])
             right.pop(0)
     
-    if len(left) >=1:
+    while len(left) >=1:
         result.append(left[0])
         left.pop(0)
-    if len(right) >=1:
+    while len(right) >=1:
         result.append(right[0])
         right.pop(0)
     return list(result)
